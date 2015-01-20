@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	//제곱 해서 리턴하는함수
+	function mySquare(x){
+		return x*x;
+	}
+	
+	//alert(mySquare(prompt("숫자 입력하세요","숫자")));
+	
+	//매개변수 모두 더해서 리턴하는 함수
+	function allSum(){
+		var result = 0;
+		for(var i in arguments){
+			result += arguments[i];
+		}
+		return result;
+	}
+	
+	var res = allSum(1,2,3,4);
+	
+	//alert(res);
+	
+	//파싱
+	var won = "1000원";
+	var dollar = "1.5$";
+	alert(parseInt(won));
+	alert(parseFloat(dollar));
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
