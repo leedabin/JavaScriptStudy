@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+/*
+	var startTime = new Date().getTime();
+	var endTime = startTime + 1000;
+	
+	for(var CPS = 0 ; startTime < endTime; CPS ++){}
+	
+	alert("초당 연산 횟수 : " + CPS);
+	*/
+/*	
+ 
+ //반피라미드 	
+ var output ="";
+	
+	for(var i = 0 ; i < 15 ; i++){
+		
+		for(var j = 0; j < i ; j ++){
+			
+			output += "*";
+		}
+		
+		output +="\n";
+	}
+	
+	alert(output);
+*/
+/*
+	//피라미드
+	var output = "";
+	for(var i= 0 ; i < 15; i ++){
+		
+		for(var j=0; j< 15-i ; j++){
+			
+			output += " ";
+		}
+		for(var k = 0; k < i*2-1 ; k++){
+			
+			output += "*";
+		}
+		
+		output += "\n";
+	}
+	alert(output);
+*/
+
+//색반전 피라미드
+	var output = "";
+	
+	for(var i=1; i<7; i++ ){
+		
+		for(var j=7; j >i ; j--){
+			
+			output +="*";
+		}
+		for(var k=0; k<i*2-1; k++){
+			
+			output +=" ";
+		}
+		for(var l=7; l>i ; l--){
+			output += "*";
+		}
+		output += "\n";
+	}
+	alert(output);	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
