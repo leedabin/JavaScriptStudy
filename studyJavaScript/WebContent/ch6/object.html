@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	//객체 선언
+// 	var product = {
+
+// 		제품명 : "7D 건조 망고",
+// 		유형 : "당절임",
+// 		성분 : "망고, 설탕, 메타중아황산나트륨, 치자황색소",
+// 		원산지 : "필리핀",
+
+// 	};
+
+// 	alert(product.성분);
+
+	var student = {
+			이름 : "연하진",
+		 국어: 92, 수학: 98, 영어 : 96, 과학 : 98
+			
+	};
+	
+	//alert(student.이름);
+	
+ 	var output = "";
+	
+	output += "'이름' in student : " + ('이름' in student) + "\n";
+ 	output += "'성별' in student : " + ('성별' in student);
+	
+ 	//alert(output);
+ 	
+ 	with(student){
+ 		output = "";
+ 		output += "이름 : " + 이름 + "\n";
+ 		output += "국어 : " + 국어 + "\n";
+ 		output += "영어 : " + 영어 + "\n";
+ 		output += "과학 : " + 과학 + "\n";
+ 	}
+ 	alert(output);
+ 	
+ 	
+
+</script>
+</head>
+<body>객체지향 프로그래밍
+</body>
+</html>

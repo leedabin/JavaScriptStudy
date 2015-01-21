@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//빈 객체 생성
+	var student = {};
+	
+	//객체에 속성추가
+	student.이름 = "운인성";
+	student.취미 = "악기";
+	student.특기 = "프로그래밍";
+	student.장래희망 = "생명공학자";
+	
+	student.toString = function(){
+		var output = "";
+		for(var key in student){
+			if(key != "toString"){
+				output += key + " : " + this[key] + "\n";
+			}
+		}
+		return output;
+	}
+	
+	alert(student);
+	
+	//속성 제거
+	delete(student.장래희망);
+	
+	alert(student);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
