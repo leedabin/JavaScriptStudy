@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//새창띄움
+// 	var child = window.open("","","width=600, height=300");
+	
+// 	child.document.write("<h1>From Parent Window</h1>");
+
+//3초후 창이 종료
+// window.onload = function(){
+// 	alert("3초후 이 페이지는 종료 됩니다.");
+	
+// 	window.setTimeout(function(){
+// 		window.close();
+// 	},3000);
+	
+// };
+
+//타이머 메소드
+// window.onload = function(){
+// 	var intervalID = setInterval(function(){
+// 		document.body.innerHTML = "<p>" + new Date() + "</p>";
+// 	}, 1000);
+	
+// 	setTimeout(function(){
+// 		clearInterval(intervalID);
+// 	}, 10000);
+// }
+
+//상대이동 절대이동
+var child = window.open("","","wid");
+
+child.moveTo(0,0);
+
+setInterval(function(){
+	child.moveBy(10,10);
+},1000);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
