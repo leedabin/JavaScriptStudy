@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 	window.onload = function() {
+
+// 		var flag = true;
+
+// 		document.getElementById("header").onclick = function() {
+// 			if (flag) {
+// 				this.style.color = "Orange";
+// 				this.style.backgroundColor = "Red";
+// 				flag = false;
+// 			} else {
+// 				this.style.color = "Black";
+// 				this.style.backgroundColor = "White";
+// 				flag = true;
+// 			}
+// 		};
+// 	};
+	window.onload = function(){
+		var header = document.getElementById("myHeader");
+		
+		header.addEventListener("click", function(){
+			this.innerHTML += "+";
+		});
+	};
+</script>
+</head>
+<body>
+	<h1 id="myHeader">클릭하세요</h1>
+</body>
+</html>
