@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 	window.onload = function() {
+
+// 		//텍스트 노드 갖는 노드 생성
+// 		var header = document.createElement('h1');
+// 		var textNode = document.createTextNode('hello DOM');
+
+// 		header.appendChild(textNode);
+// 		document.body.appendChild(header);
+
+		
+// 		//텍스트 노드 갖지 않는 노드 생성
+// 		var img = document.createElement('img');
+// 		img.src = "logo.jpg";
+// 		img.width = 500;
+// 		img.height = 350;
+
+// 		document.body.appendChild(img);
+	
+// 	};
+
+//innerHTML속성 사용
+	window.onload = function(){
+	var output = "";
+	output += '<ul>';
+ 	output += "<li>JavaScript</li>";
+ 	output += "<li>jQuery</li>";
+ 	output += "<li>Ajax</li>";
+ 	output += '</ul>';
+	
+	document.body.innerHTML = output;
+
+	document.body.innerHTML += "<h1>hi</h1>";
+};
+</script>
+</head>
+<body>
+
+</body>
+</html>

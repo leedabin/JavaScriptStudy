@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		var header = document.getElementById("header");
+		header.style.border = "2px Solid Black";
+		header.style.color = "Orange";
+		header.style.fontFamily = "Helvetica";
+	
+		setInterval(function(){
+			var now = new Date();
+			header.innerHTML = now.toString();
+		},1000);
+	}
+</script>
+</head>
+<body>
+	<h1 id="header">HEADER</h1>
+</body>
+</html>

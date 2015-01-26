@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	#sun{
+		position : absolute;
+		left: 250px;
+		top: 200px;
+		font-size: 3em;
+	}
+	
+	#earth{
+		position: absolute;
+	}
+	
+	#moon{
+		position: absolute;
+		font-size: 0.5em;
+	}
+		
+</style>
+
+<script type="text/javascript">
+	window.onload = function(){
+		var sun = document.getElementById("sun");
+		var earth = document.getElementById("earth");
+		var moon = document.getElementById("moon");
+		
+		var earthAngle = 0;
+		var moonAngle = 0;
+		
+		setInterval(function(){
+			var earthLeft = 250 + 150 * Math.cos(earthAngle);
+			var earthTop = 200 + 150 * Math.sin(earthAngle);
+			var moonLeft = earthLeft + 60 * Math.cos(moonAngle);
+			var moonTop = earthTop + 60 * Math.sin(moonAngle);
+			
+			earth.style.left = earthLeft+"px";
+			earth.style.top = earthTop +"px";
+			moon.style.left= moonLeft+"px";
+			moon.style.top = moonTop+"px";
+			
+			earthAngle += 0.1;
+			moonAngle += 0.3;
+		}, 1000/30);
+	};
+</script>
+
+
+
+</head>
+<body>
+	<h1 id="sun">●</h1>
+	<h1 id="earth">◎</h1>
+	<h1 id="moon">◑</h1>
+</body>
+</html>
