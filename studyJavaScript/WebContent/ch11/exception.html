@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function registerEventListener(node, event, listener) {
+    try {
+			node.addEventListener(event, listener, false);
+		}
+		catch(exception){
+			node.attachEvent("on"+event, listener);
+		}
+	}
+	
+	window.onload = function(){
+		var header = document.getElementById("header");
+		registerEventListener(header, "click", function(){
+			alert("Click");
+		});
+	};
+</script>
+</head>
+<body>
+	<h1 id="header">Click</h1>
+</body>
+</html>
