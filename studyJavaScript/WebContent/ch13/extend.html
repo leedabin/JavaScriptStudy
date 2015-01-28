@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var object = {};
+		object.name = "RintIanTta";
+		object.gender = "Male";
+		object.part = "Second Guitar";
+		
+		$.extend(object,{age : "20"}, {height : "170"});
+		
+		var output = "";
+		$.each(object, function(key, item){
+			output += key + " : " + item + "\n";
+		});
+		alert(output);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

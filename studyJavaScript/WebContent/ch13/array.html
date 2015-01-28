@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+
+				var array = [ {
+					name : "Hanvit Media",
+					link : "http://hanb.co.kr"
+				}, {
+					name : "Naver",
+					link : "http://www.naver.com"
+				}, {
+					name : "Daum",
+					link : "http://daum.net"
+				} ];
+
+				$.each(array, function(index, item) {
+					var output = "";
+					output += "<a href="+ item.link +">" + "<h1>" + item.name
+							+ "</h1></a>";
+					document.body.innerHTML += output;
+					
+				});
+
+			});
+</script>
+</head>
+<body>
+
+</body>
+</html>
